@@ -28,8 +28,8 @@ app.get("/prueba", (req, res) =>{
 //Que la aplicación escuche peticiones
 sequelize.sync()
     .then(()=>{
-        app.listen(8080,()=>{
-            console.log("Aplicación web en línea en el puerto 8080")
+        app.listen(8081,()=>{
+            console.log("Aplicación web en línea en el puerto 8081")
     })
     })
     .catch(err=>console.log(err))
