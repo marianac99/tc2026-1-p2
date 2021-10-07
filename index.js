@@ -1,7 +1,7 @@
 const express = require ("express")
 const path = require("path")
 const vjRoutes = require('./routes/videojuegos')
-const conRoutes = require('./routes/consola')
+const conRoutes = require('./routes/consolas')
 const sequelize = require('./utils/database')
 const app = express()
 
@@ -12,7 +12,7 @@ app.use(express.urlencoded({extended:true}))
 
 
 app.use( "/videojuegos",vjRoutes);
-//app.use( "/consola",vjRoutes);
+app.use( "/consolas",conRoutes);
 
 app.get("/prueba", (req, res) =>{
     res.send("Prueba del servidor funcianando")
