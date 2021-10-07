@@ -49,7 +49,7 @@ exports.postActualizarConsolaV = (req, res)=>{
     console.log(req.body.keys)
     
     ConsolaV.update({
-        nombre:req.body.nombre
+        lanzamiento:req.body.lanzamiento
     },{
         where:{
             id:req.body.id
