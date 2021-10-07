@@ -1,0 +1,3 @@
+git add . => carga todos los cambios al repositorio  local
+git commint -m "mensaje" => etiqueta los cambios dentro del repositorio local
+git push

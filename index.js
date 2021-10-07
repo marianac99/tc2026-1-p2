@@ -2,7 +2,7 @@ const express = require ("express")
 const app = express()
 
 app.get("/prueba", (req, res) =>{
-    req.send ("Prueba del servidor funcianando")
+    res.send("Prueba del servidor funcianando")
 
 })
 
