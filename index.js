@@ -21,10 +21,6 @@ app.get("/prueba", (req, res) =>{
 
 })
 
-/*app.listen(8084,()=>{
-    console.log("Servidor en linea puerto 8084")
-})*/
-
 //Que la aplicación escuche peticiones
 sequelize.sync()
     .then(()=>{
